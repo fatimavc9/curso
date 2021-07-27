@@ -1,0 +1,19 @@
+lista_ = [1,2,3,4,5,6,6, [2,4,5,6,6,5,4,3,2,1,5,6,7,8,9], 'hola', 45]
+def get_values_mix_list():
+  """Inserte toda la lógica aquí"""
+for index in range(0, len(lista_)-1):
+  if type(lista_[index]) == list:
+     print(lista_[index])
+     a=lista_[index]
+     b=[]
+     for i in a:
+       if i < 7:
+         b.append(i)
+pass
+
+
+print(b)
+
+result = [2, 4, 5, 6, 6, 5, 4, 3, 2, 1, 5, 6]
+print(result == b)
+
